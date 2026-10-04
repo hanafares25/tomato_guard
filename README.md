@@ -1,6 +1,4 @@
-from pathlib import Path
-
-readme = """# 🍅 TomatoGuard
+# 🍅 TomatoGuard
 
 **Offline AI for tomato leaf disease screening — built for the World Bank × Hack-Nation Small AI for Development Hackathon.**
 
