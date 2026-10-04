@@ -1,0 +1,310 @@
+{
+  "dataset": {
+    "name": "PlantVillage (tomato subset)",
+    "n_images": 18160,
+    "split_sizes": {
+      "train": 12712,
+      "test": 2724,
+      "val": 2724
+    },
+    "seed": 42,
+    "root": "/kaggle/input/datasets/abdallahalidev/plantvillage-dataset/plantvillage dataset/color"
+  },
+  "training": {
+    "arch": "MobileNetV3-Small (ImageNet init)",
+    "epochs_head": 3,
+    "epochs_finetune": 12,
+    "lr_head": 0.001,
+    "lr_finetune": 0.0003,
+    "batch": 64,
+    "label_smoothing": 0.05,
+    "best": {
+      "f1": 0.9904272019905532,
+      "epoch": 12,
+      "phase": "finetune"
+    },
+    "history": [
+      {
+        "phase": "head",
+        "epoch": 1,
+        "train_loss": 0.9999026153424774,
+        "val_acc": 0.8362701908957415,
+        "val_macro_f1": 0.8007868872723412
+      },
+      {
+        "phase": "head",
+        "epoch": 2,
+        "train_loss": 0.7396604132772696,
+        "val_acc": 0.9052863436123348,
+        "val_macro_f1": 0.8878206166278355
+      },
+      {
+        "phase": "head",
+        "epoch": 3,
+        "train_loss": 0.6735895351328031,
+        "val_acc": 0.9148311306901615,
+        "val_macro_f1": 0.897255882826071
+      },
+      {
+        "phase": "finetune",
+        "epoch": 1,
+        "train_loss": 0.6980991827117072,
+        "val_acc": 0.9427312775330396,
+        "val_macro_f1": 0.9270450326889762
+      },
+      {
+        "phase": "finetune",
+        "epoch": 2,
+        "train_loss": 0.49650967798449774,
+        "val_acc": 0.9574155653450808,
+        "val_macro_f1": 0.9506077170152679
+      },
+      {
+        "phase": "finetune",
+        "epoch": 3,
+        "train_loss": 0.46039202959850584,
+        "val_acc": 0.9732011747430249,
+        "val_macro_f1": 0.9683214823217365
+      },
+      {
+        "phase": "finetune",
+        "epoch": 4,
+        "train_loss": 0.43823051272016583,
+        "val_acc": 0.9853157121879589,
+        "val_macro_f1": 0.9845175192630947
+      },
+      {
+        "phase": "finetune",
+        "epoch": 5,
+        "train_loss": 0.42178787682393587,
+        "val_acc": 0.98568281938326,
+        "val_macro_f1": 0.9837137577912841
+      },
+      {
+        "phase": "finetune",
+        "epoch": 6,
+        "train_loss": 0.4089215903571158,
+        "val_acc": 0.9845814977973568,
+        "val_macro_f1": 0.983684565629851
+      },
+      {
+        "phase": "finetune",
+        "epoch": 7,
+        "train_loss": 0.39927592196247796,
+        "val_acc": 0.9911894273127754,
+        "val_macro_f1": 0.9902842538912946
+      },
+      {
+        "phase": "finetune",
+        "epoch": 8,
+        "train_loss": 0.39231737349370516,
+        "val_acc": 0.9897209985315712,
+        "val_macro_f1": 0.9895039967480683
+      },
+      {
+        "phase": "finetune",
+        "epoch": 9,
+        "train_loss": 0.3896520772967676,
+        "val_acc": 0.9904552129221733,
+        "val_macro_f1": 0.9898330703491689
+      },
+      {
+        "phase": "finetune",
+        "epoch": 10,
+        "train_loss": 0.3845697222936033,
+        "val_acc": 0.9900881057268722,
+        "val_macro_f1": 0.989859307879307
+      },
+      {
+        "phase": "finetune",
+        "epoch": 11,
+        "train_loss": 0.3828400811462691,
+        "val_acc": 0.9897209985315712,
+        "val_macro_f1": 0.9895182848156049
+      },
+      {
+        "phase": "finetune",
+        "epoch": 12,
+        "train_loss": 0.38397716181446806,
+        "val_acc": 0.9904552129221733,
+        "val_macro_f1": 0.9904272019905532
+      }
+    ]
+  },
+  "fp32_pytorch_test": {
+    "accuracy": 0.9952276064610867,
+    "macro_f1": 0.9949606923343641,
+    "per_class": {
+      "Bacterial Spot": {
+        "precision": 0.9814241486068112,
+        "recall": 0.9937304075235109,
+        "f1-score": 0.9875389408099688,
+        "support": 319.0
+      },
+      "Early Blight": {
+        "precision": 1.0,
+        "recall": 0.9866666666666667,
+        "f1-score": 0.9932885906040269,
+        "support": 150.0
+      },
+      "Late Blight": {
+        "precision": 0.9965034965034965,
+        "recall": 0.9965034965034965,
+        "f1-score": 0.9965034965034965,
+        "support": 286.0
+      },
+      "Leaf Mold": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 143.0
+      },
+      "Septoria Leaf Spot": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 265.0
+      },
+      "Spider Mites": {
+        "precision": 0.9920948616600791,
+        "recall": 0.996031746031746,
+        "f1-score": 0.994059405940594,
+        "support": 252.0
+      },
+      "Target Spot": {
+        "precision": 0.9905660377358491,
+        "recall": 0.995260663507109,
+        "f1-score": 0.9929078014184397,
+        "support": 211.0
+      },
+      "Mosaic Virus": {
+        "precision": 0.9824561403508771,
+        "recall": 1.0,
+        "f1-score": 0.9911504424778761,
+        "support": 56.0
+      },
+      "Yellow Leaf Curl Virus": {
+        "precision": 1.0,
+        "recall": 0.9925373134328358,
+        "f1-score": 0.9962546816479401,
+        "support": 804.0
+      },
+      "Healthy": {
+        "precision": 0.99581589958159,
+        "recall": 1.0,
+        "f1-score": 0.9979035639412998,
+        "support": 238.0
+      },
+      "accuracy": 0.9952276064610867,
+      "macro avg": {
+        "precision": 0.9938860584438703,
+        "recall": 0.9960730293665365,
+        "f1-score": 0.9949606923343641,
+        "support": 2724.0
+      },
+      "weighted avg": {
+        "precision": 0.9952692255749798,
+        "recall": 0.9952276064610867,
+        "f1-score": 0.9952345683359172,
+        "support": 2724.0
+      }
+    }
+  },
+  "fp32_vs_int8": {
+    "fp32_onnx": {
+      "test_accuracy": 0.9955947136563876,
+      "test_macro_f1": 0.9951773712477493,
+      "size_mb": 6.126,
+      "latency_ms_median_1thread": 2.3,
+      "latency_ms_p95_1thread": 2.6
+    },
+    "int8_onnx": {
+      "test_accuracy": 0.342143906020558,
+      "test_macro_f1": 0.3104688242979749,
+      "size_mb": 1.897,
+      "latency_ms_median_1thread": 4.1,
+      "latency_ms_p95_1thread": 4.6
+    },
+    "prediction_agreement_fp32_vs_int8": 0.3410425844346549
+  },
+  "int8_calibration_method": "percentile",
+  "deployed": "fp32",
+  "uncertainty": {
+    "temperature": 0.8264204263687134,
+    "threshold": 0.69,
+    "high_confidence_threshold": 0.9
+  },
+  "final_evaluation": {
+    "test_clean": {
+      "n": 2724,
+      "raw_accuracy": 0.9955947136563876,
+      "coverage": 0.98568281938326,
+      "accuracy_when_answering": 0.9981378026070763
+    },
+    "test_stress": {
+      "blur": {
+        "n": 600,
+        "raw_accuracy": 0.7916666666666666,
+        "coverage": 0.6416666666666667,
+        "accuracy_when_answering": 0.948051948051948
+      },
+      "dark": {
+        "n": 600,
+        "raw_accuracy": 0.9516666666666667,
+        "coverage": 0.9066666666666666,
+        "accuracy_when_answering": 0.9742647058823529
+      },
+      "bright": {
+        "n": 600,
+        "raw_accuracy": 0.7283333333333334,
+        "coverage": 0.605,
+        "accuracy_when_answering": 0.928374655647383
+      },
+      "lowres": {
+        "n": 600,
+        "raw_accuracy": 0.8866666666666667,
+        "coverage": 0.7466666666666667,
+        "accuracy_when_answering": 0.9642857142857143
+      },
+      "zoomout": {
+        "n": 600,
+        "raw_accuracy": 0.36833333333333335,
+        "coverage": 0.37666666666666665,
+        "accuracy_when_answering": 0.5176991150442478
+      },
+      "noise": {
+        "n": 600,
+        "raw_accuracy": 0.4816666666666667,
+        "coverage": 0.42333333333333334,
+        "accuracy_when_answering": 0.7086614173228346
+      },
+      "random_mix": {
+        "n": 600,
+        "raw_accuracy": 0.72,
+        "coverage": 0.6516666666666666,
+        "accuracy_when_answering": 0.8900255754475703
+      }
+    },
+    "other_crops": {
+      "n": 840,
+      "accepted_as_tomato": 0.35714285714285715,
+      "rejected": 0.6428571428571429,
+      "worst_folders_accepted_as_tomato": {
+        "Potato___Late_blight": 0.8,
+        "Strawberry___Leaf_scorch": 0.667,
+        "Grape___Esca_(Black_Measles)": 0.633,
+        "Apple___Apple_scab": 0.567,
+        "Corn_(maize)___healthy": 0.567,
+        "Potato___Early_blight": 0.533,
+        "Apple___Cedar_apple_rust": 0.533,
+        "Corn_(maize)___Northern_Leaf_Blight": 0.5
+      }
+    }
+  },
+  "caveats": [
+    "PlantVillage images are lab-style photos of single leaves on plain backgrounds; PlantVillage contains many near-duplicates, so the random split inflates test scores. These numbers are NOT field accuracy.",
+    "Latency was measured on a Kaggle CPU (1 thread), not on a phone.",
+    "Threshold was chosen on validation data (clean + synthetically degraded), not on real farmer photos.",
+    "Non-tomato rejection by threshold alone is unreliable; use the separate tomato/not-tomato detector."
+  ]
+}

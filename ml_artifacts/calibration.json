@@ -1,0 +1,8 @@
+{
+  "model_file": "tomato_mobilenetv3_fp32.onnx",
+  "temperature": 0.8264204263687134,
+  "threshold": 0.69,
+  "high_confidence_threshold": 0.9,
+  "rule": "probs = softmax(logits / temperature); if max(probs) < threshold -> say 'I'm not sure'",
+  "target_accuracy_when_answering": 0.95
+}

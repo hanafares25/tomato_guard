@@ -1,0 +1,68 @@
+{
+  "bacterial_spot": {
+    "name": "التبقع البكتيري",
+    "color": "red",
+    "speech": "ممكن تكون الطماطم مصابة بالتبقع البكتيري. بص على باقي الزرع وشوف لو فيه نفس الأعراض.",
+    "audio": { "path": "assets/audio/bacterial_spot.mp3" }
+  },
+  "early_blight": {
+    "name": "اللفحة المبكرة",
+    "color": "red",
+    "speech": "ممكن تكون الطماطم مصابة باللفحة المبكرة. بص على باقي الزرع وشوف لو فيه نفس الأعراض.",
+    "audio": { "path": "assets/audio/early_blight.mp3" }
+  },
+  "healthy": {
+    "name": "الورقة شكلها سليم",
+    "color": "green",
+    "speech": "الورقة شكلها سليم، ومفيش علامات واضحة على وجود مرض.",
+    "audio": { "path": "assets/audio/healthy.mp3" }
+  },
+  "late_blight": {
+    "name": "اللفحة المتأخرة",
+    "color": "red",
+    "speech": "ممكن تكون الطماطم مصابة باللفحة المتأخرة. بص على باقي الزرع وشوف لو فيه نفس الأعراض.",
+    "audio": { "path": "assets/audio/late_blight.mp3" }
+  },
+  "leaf_mold": {
+    "name": "عفن الأوراق",
+    "color": "red",
+    "speech": "ممكن تكون الطماطم مصابة بعفن الأوراق. بص على باقي الزرع وشوف لو فيه نفس الأعراض.",
+    "audio": { "path": "assets/audio/leaf_mold.mp3" }
+  },
+  "mosaic_virus": {
+    "name": "فيروس الموزاييك",
+    "color": "red",
+    "speech": "ممكن تكون الطماطم مصابة بفيروس الموزاييك. بص على باقي الزرع وشوف لو فيه نفس الأعراض.",
+    "audio": { "path": "assets/audio/mosaic_virus.mp3" }
+  },
+  "septoria_leaf_spot": {
+    "name": "تبقع الأوراق",
+    "color": "red",
+    "speech": "ممكن تكون الطماطم مصابة بتبقع الأوراق. بص على باقي الزرع وشوف لو فيه نفس الأعراض.",
+    "audio": { "path": "assets/audio/septoria_leaf_spot.mp3" }
+  },
+  "spider_mites": {
+    "name": "العنكبوت الأحمر",
+    "color": "red",
+    "speech": "ممكن يكون فيه عنكبوت أحمر على الطماطم. بص على باقي الزرع وشوف لو فيه نفس الأعراض.",
+    "audio": { "path": "assets/audio/spider_mites.mp3" }
+  },
+  "target_spot": {
+    "name": "تبقع الهدف",
+    "color": "red",
+    "speech": "ممكن تكون الطماطم مصابة بتبقع الهدف. بص على باقي الزرع وشوف لو فيه نفس الأعراض.",
+    "audio": { "path": "assets/audio/target_spot.mp3" }
+  },
+  "yellow_leaf_curl_virus": {
+    "name": "فيروس تجعد الأوراق الأصفر",
+    "color": "red",
+    "speech": "ممكن تكون الطماطم مصابة بفيروس تجعد الأوراق الأصفر. بص على باقي الزرع وشوف لو فيه نفس الأعراض.",
+    "audio": { "path": "assets/audio/yellow_leaf_curl_virus.mp3" }
+  },
+  "_not_sure": {
+    "name": "مش متأكد",
+    "color": "amber",
+    "speech": "مش قادر أحدد المشكلة بشكل مؤكد. صوّر ورقة طماطم واحدة واضحة في ضوء كويس وجرّب تاني.",
+    "audio": { "path": "assets/audio/_not_sure.mp3" }
+  }
+}

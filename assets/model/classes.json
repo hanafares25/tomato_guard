@@ -1,0 +1,112 @@
+{
+  "classes": [
+    {
+      "index": 0,
+      "id": "bacterial_spot",
+      "name": "Bacterial Spot",
+      "folder": "Tomato___Bacterial_spot",
+      "name_ar": "التبقع البكتيري",
+      "speech_ar": "ممكن تكون الطماطم مصابة بالتبقع البكتيري. بص على باقي الزرع وشوف لو فيه نفس الأعراض."
+    },
+    {
+      "index": 1,
+      "id": "early_blight",
+      "name": "Early Blight",
+      "folder": "Tomato___Early_blight",
+      "name_ar": "اللفحة المبكرة",
+      "speech_ar": "ممكن تكون الطماطم مصابة باللفحة المبكرة. بص على باقي الزرع وشوف لو فيه نفس الأعراض."
+    },
+    {
+      "index": 2,
+      "id": "late_blight",
+      "name": "Late Blight",
+      "folder": "Tomato___Late_blight",
+      "name_ar": "اللفحة المتأخرة",
+      "speech_ar": "ممكن تكون الطماطم مصابة باللفحة المتأخرة. بص على باقي الزرع وشوف لو فيه نفس الأعراض."
+    },
+    {
+      "index": 3,
+      "id": "leaf_mold",
+      "name": "Leaf Mold",
+      "folder": "Tomato___Leaf_Mold",
+      "name_ar": "عفن الأوراق",
+      "speech_ar": "ممكن تكون الطماطم مصابة بعفن الأوراق. بص على باقي الزرع وشوف لو فيه نفس الأعراض."
+    },
+    {
+      "index": 4,
+      "id": "septoria_leaf_spot",
+      "name": "Septoria Leaf Spot",
+      "folder": "Tomato___Septoria_leaf_spot",
+      "name_ar": "تبقع الأوراق",
+      "speech_ar": "ممكن تكون الطماطم مصابة بتبقع الأوراق. بص على باقي الزرع وشوف لو فيه نفس الأعراض."
+    },
+    {
+      "index": 5,
+      "id": "spider_mites",
+      "name": "Spider Mites",
+      "folder": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "name_ar": "العنكبوت الأحمر",
+      "speech_ar": "ممكن يكون فيه عنكبوت أحمر على الطماطم. بص على باقي الزرع وشوف لو فيه نفس الأعراض."
+    },
+    {
+      "index": 6,
+      "id": "target_spot",
+      "name": "Target Spot",
+      "folder": "Tomato___Target_Spot",
+      "name_ar": "تبقع الهدف",
+      "speech_ar": "ممكن تكون الطماطم مصابة بتبقع الهدف. بص على باقي الزرع وشوف لو فيه نفس الأعراض."
+    },
+    {
+      "index": 7,
+      "id": "mosaic_virus",
+      "name": "Mosaic Virus",
+      "folder": "Tomato___Tomato_mosaic_virus",
+      "name_ar": "فيروس الموزاييك",
+      "speech_ar": "ممكن تكون الطماطم مصابة بفيروس الموزاييك. بص على باقي الزرع وشوف لو فيه نفس الأعراض."
+    },
+    {
+      "index": 8,
+      "id": "yellow_leaf_curl_virus",
+      "name": "Yellow Leaf Curl Virus",
+      "folder": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "name_ar": "فيروس تجعد الأوراق الأصفر",
+      "speech_ar": "ممكن تكون الطماطم مصابة بفيروس تجعد الأوراق الأصفر. بص على باقي الزرع وشوف لو فيه نفس الأعراض."
+    },
+    {
+      "index": 9,
+      "id": "healthy",
+      "name": "Healthy",
+      "folder": "Tomato___healthy",
+      "name_ar": "الورقة شكلها سليم",
+      "speech_ar": "الورقة شكلها سليم، ومفيش علامات واضحة على وجود مرض."
+    }
+  ],
+  "messages_ar": {
+    "uncertain": {
+      "title": "مش متأكد",
+      "speech": "مش قادر أحدد المشكلة بشكل مؤكد. صوّر ورقة طماطم واحدة واضحة في ضوء كويس وجرّب تاني."
+    },
+    "not_tomato": {
+      "title": "دي مش شكل ورقة طماطم",
+      "speech": "الصورة دي مش شكل ورقة طماطم. صوّر ورقة طماطم وجرّب تاني."
+    },
+    "bad_image": {
+      "title": "مش شايف الورقة كويس",
+      "speech": "مش شايف الورقة بوضوح. صوّر تاني في ضوء كويس."
+    },
+    "confidence_high": "ثقة عالية",
+    "confidence_medium": "ثقة متوسطة",
+    "extension_hint": "لو المشكلة بتزيد أو لسه مش متأكد، كلّم المرشد الزراعي."
+  },
+  "preprocessing": {
+    "input_name": "input",
+    "output_name": "logits",
+    "layout": "NCHW",
+    "size": [
+      224,
+      224
+    ],
+    "resize": "direct resize of the whole photo to 224x224 (no crop)",
+    "pixel_range": "RGB float32 in [0,1] (value/255); ImageNet normalisation is inside the model"
+  }
+}
